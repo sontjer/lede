@@ -69,7 +69,7 @@ jobs:
        # git clone https://github.com/longcat99/OpenClash.git
        # git clone https://github.com/vernesong/OpenClash.git
        # git clone https://github.com/frainzy1477/luci-app-clash.git
-       git clone https://github.com/destan19/OpenAppFilter.git
+       # git clone https://github.com/destan19/OpenAppFilter.git
        # git clone https://github.com/jerrykuku/luci-app-ttnode.git
        # git clone https://github.com/linkease/ddnsto-openwrt.git
        # git clone https://github.com/jerrykuku/luci-app-vssr.git
@@ -137,9 +137,7 @@ jobs:
           # 无论你想要对固件进行怎样的定制, 都需要且只需要修改 EOF 回环内的内容.
           # 
 
-          
-CONFIG_MODULES=y
-CONFIG_HAVE_DOT_CONFIG=y
+cat >> .config <<EOF          
 # CONFIG_TARGET_sunxi is not set
 # CONFIG_TARGET_apm821xx is not set
 # CONFIG_TARGET_ath25 is not set
